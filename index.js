@@ -4,6 +4,8 @@ import bodyParser from "body-parser";
 
 const app = express();
 const port = 3000;
+const WEATHER_API_URL = "https://api.openweathermap.org";
+// const GEOCODING_API_URL = 
 
 app.use(express.static("public"));
 
