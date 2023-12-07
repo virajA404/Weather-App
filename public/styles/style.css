@@ -16,6 +16,9 @@ body{
 h1{
     text-align: center;
 }
+.response-area {
+    width: 90%;
+}
 form{
     margin-top: 2rem;
 }
