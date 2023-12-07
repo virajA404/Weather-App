@@ -35,25 +35,29 @@
     <% if(locals.weather){ %>
     <div class="response-area">
       <h4>
+        Weather of
+        <%= locals.location %>
+      </h4>
+      <h6>
         Temperature: 
         <%= weather.temp %>
         °C
-      </h4>
-      <h4>
+      </h6>
+      <h6>
         Feels Like: 
         <%= weather.feels_like %>
         °C
-      </h4>
-      <h4>
+      </h6>
+      <h6>
         Pressure: 
         <%= weather.pressure %>
         hPa
-      </h4>
-      <h4>
+      </h6>
+      <h6>
         Humidity: 
         <%= weather.humidity %>
         %
-      </h4>
+      </h6>
     </div>
     <% } %>
 </body>
