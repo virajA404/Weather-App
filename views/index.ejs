@@ -11,6 +11,7 @@
 </head>
 
 <body class="p-3 mb-2 bg-light text-dark">
+    <!-- creating the form to get the location -->
     <section class="input">
         <h1>Weather App</h1>
         <form action="/submit" method="post">
@@ -20,10 +21,13 @@
               <input type="text" class="form-control" id="formGroupExampleInput"
                   placeholder="Location name" name="location"/>
           </div>
-            <button value="POST" formaction="/submit" class="btn btn-primary">Submit</button>
+            <!-- this btn is to get the lat and lon -->
+            <button value="POST" formaction="/submit" class="btn btn-primary">Submit</button> 
+            <!-- this btn is to get the weather information -->
             <button value="POST" formaction="/get-weather" class="btn btn-primary">Weather</button>
         </form>
     </section>
+    <!-- this part displays the lat and lon information -->
     <div class="response-area">
       <p>
         <%= locals.latitude %>
@@ -32,6 +36,8 @@
         <%= locals.longitude %>
       </p>
     </div>
+
+    <!-- this part displays the weather information only after you get the lat and lon information -->
     <% if(locals.weather){ %>
     <div class="response-area">
       <h4>
