@@ -1,6 +1,6 @@
 *{
     font-family: 'Poppins', sans-serif;
-    color: #021131;
+    color: #e5e7ec;
     margin: 0;
     padding: 0;
     list-style: none;
@@ -12,19 +12,31 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: radial-gradient(ellipse at bottom, #0d1d31 0%, #0c0d13 100%);
+    overflow: hidden;
 }
 h1{
     text-align: center;
 }
+
 .response-area {
     width: 90%;
+    text-align: center;
 }
 form{
     margin-top: 2rem;
 }
 section{  
-    width: 90%;
+    width: 50%;
     margin: 1rem auto;
+}
+.btns{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    /* align-items: center; */
 }
 form button{
     /* margin-right: 0px !important; */
